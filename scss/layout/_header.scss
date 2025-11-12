@@ -1,0 +1,81 @@
+%flex-col-center {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    background-color: #eee;
+}
+
+.top-bar {
+    @extend %flex-col-center;
+    padding: 30px 0;
+}
+
+.navbar {
+    margin-left: 125px;
+    margin-right: auto;
+
+    &__list {
+        @extend %flex-col-center;
+    }
+
+    &__link {
+        padding: 10px 15px;
+        @extend %flex-col-center;
+        gap: 6px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.46;
+    }
+
+    &__link:hover {
+        color: #ac5ba8;
+    }
+}
+
+.top-act {
+    @extend %flex-col-center;
+    gap: 20px;
+
+    &__group {
+        @extend %flex-col-center;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 20px 60px 10px rgba(237, 237, 246, 0.2);
+    }
+
+    &__btn {
+        @extend %flex-col-center;
+        background-color: transparent;
+        gap: 10px;
+        padding: 13px 20px;
+        cursor: pointer;
+    }
+
+    &__btn--single {
+        padding: 13px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    &__separate {
+        width: 1px;
+        height: 30px;
+        background: #ededf6;
+    }
+
+    &__avatar {
+        display: block;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 14px 2px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+    }
+}
