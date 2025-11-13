@@ -5,7 +5,7 @@
 
 .header {
     width: 100%;
-    background-color: #eee;
+    background-color: var(--header-bg-color);
 }
 
 .top-bar {
@@ -22,8 +22,8 @@
     }
 
     &__link {
-        padding: 10px 15px;
         @extend %flex-col-center;
+        padding: 10px 15px;
         gap: 6px;
         font-size: 1.5rem;
         font-weight: 500;
@@ -42,7 +42,7 @@
     &__group {
         @extend %flex-col-center;
         border-radius: 8px;
-        background: #fff;
+        background: var(--top-act-bg-color);
         box-shadow: 0 20px 60px 10px rgba(237, 237, 246, 0.2);
     }
 
@@ -66,7 +66,7 @@
     &__separate {
         width: 1px;
         height: 30px;
-        background: #ededf6;
+        background: var(--top-act-separate-color);
     }
 
     &__avatar {
@@ -75,7 +75,7 @@
         height: 50px;
         object-fit: cover;
         border-radius: 8px;
-        box-shadow: 0 4px 14px 2px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 4px 14px 2px var(--top-act-shadow-color);
         cursor: pointer;
     }
 }
