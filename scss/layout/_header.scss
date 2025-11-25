@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 %flex-col-center {
     display: flex;
     align-items: center;
@@ -11,11 +13,34 @@
 .top-bar {
     @extend %flex-col-center;
     padding: 30px 0;
+
+    @include abstracts.breakpoint(lg) {
+        padding: 20px 0;
+    }
+
+    @include abstracts.breakpoint(sm) {
+        padding: 16px 0;
+    }
+
+    &__more {
+        display: none;
+        background-color: transparent;
+        @include abstracts.breakpoint(lg) {
+            display: block;
+        }
+    }
 }
 
 .navbar {
     margin-left: 125px;
-    margin-right: auto;
+
+    @include abstracts.breakpoint(xl) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include abstracts.breakpoint(lg) {
+        display: none;
+    }
 
     &__list {
         @extend %flex-col-center;
@@ -38,8 +63,13 @@
 .top-act {
     @extend %flex-col-center;
     gap: 20px;
+    margin-left: auto;
 
     &__group {
+        @include abstracts.breakpoint(md) {
+            display: none;
+        }
+
         @extend %flex-col-center;
         border-radius: 8px;
         background: var(--top-act-bg-color);
@@ -54,6 +84,11 @@
         cursor: pointer;
     }
 
+    &__btn--single {
+        @include abstracts.breakpoint(lg) {
+            display: none;
+        }
+    }
     &__btn--single {
         padding: 13px;
     }
