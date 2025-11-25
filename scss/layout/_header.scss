@@ -12,6 +12,7 @@
 
 .top-bar {
     @extend %flex-col-center;
+    position: relative;
     padding: 30px 0;
 
     @include abstracts.breakpoint(lg) {

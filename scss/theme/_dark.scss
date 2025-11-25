@@ -1,4 +1,6 @@
 html.dark {
+    --body-bg-color: #292e39;
+
     --text-color: #fff;
     --icon-filter: brightness(0) saturate(100%) invert(99%) sepia(100%)
         saturate(0%) hue-rotate(142deg) brightness(104%) contrast(100%);
@@ -8,5 +10,6 @@ html.dark {
     --top-act-shadow-color: rgba(0, 0, 0, 0.2);
     --top-act-separate-color: #ededf6;
 
-    --body-bg-color: #292e39;
+    --dropdown-bg-color: #292e39;
+    --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
 }

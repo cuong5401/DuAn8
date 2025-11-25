@@ -1,4 +1,8 @@
+@use "../abstracts";
+
 html {
+    --body-bg-color: #f6f6f6;
+
     --text-color: #162d2e;
     --icon-filter: brightness(0) saturate(100%) invert(6%) sepia(25%)
         saturate(3830%) hue-rotate(229deg) brightness(97%) contrast(93%);
@@ -8,5 +12,10 @@ html {
     --top-act-shadow-color: rgba(0, 0, 0, 0.08);
     --top-act-separate-color: #ededf6;
 
-    --body-bg-color: #f6f6f6;
+    @include abstracts.breakpoint(sm) {
+        --header-bg-color: #fff;
+    }
+
+    --dropdown-bg-color: #fff;
+    --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
 }
