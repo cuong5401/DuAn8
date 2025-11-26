@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
+        "fiter",
         "Gordita",
         "grocerymart"
-    ]
+    ],
+    "prettier.printWidth": 120
 }

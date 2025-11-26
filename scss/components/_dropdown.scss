@@ -1,8 +1,132 @@
+@use "../abstracts";
+
+.appear-dropdown:hover .dropdown {
+    display: block;
+}
 .dropdown {
     position: absolute;
-    padding: 30px;
+    left: 0;
+    padding-top: 54px;
+    width: min(1240px, 100%);
+    display: none;
 
-    border-radius: 20px;
-    background: var(--dropdown-bg-color);
-    box-shadow: 0 40px 90px 20px var(--dropdown-shadow-color);
+    &__inner {
+        --inner-height: min(600px, 100vh - 160px);
+        --inner-padding: 30px;
+
+        position: relative;
+        max-height: var(--inner-height);
+        padding: var(--inner-padding);
+        border-radius: 20px;
+        background: var(--dropdown-bg-color);
+        box-shadow: 0 40px 90px 20px var(--dropdown-shadow-color);
+
+        &::before {
+            content: url("../icon/dropdown-arrow.svg");
+            position: absolute;
+            top: -13px;
+            left: var(--arrow-left-pos);
+            translate: -75%;
+            filter: var(--dropdown-arrow-fiter, none);
+        }
+    }
+}
+
+.top-menu {
+    position: relative;
+    height: calc(var(--inner-height) - var(--inner-padding) * 2);
+    overflow-y: auto;
+
+    &__main {
+        --main-col-width: 292px;
+        @include abstracts.breakpoint(xl) {
+            --main-col-width: 220px;
+        }
+        max-width: var(--main-col-width);
+        height: inherit;
+        overflow-y: auto;
+        border-right: 1px solid var(--top-menu-border);
+    }
+}
+
+.menu-col {
+    display: flex;
+    gap: 14px;
+
+    + .menu-col {
+        margin-top: 20px;
+    }
+
+    &__item--active .sub-menu {
+        display: grid;
+    }
+
+    &__icon {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+
+        @include abstracts.breakpoint(xl) {
+            display: none;
+        }
+    }
+    &__icon-1 {
+        object-fit: cover;
+        width: 30px;
+        height: 30px;
+    }
+
+    &__icon-2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 18px;
+        height: 18px;
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__title {
+        margin-top: 4px;
+        margin-bottom: 29px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &__item--active > &__link,
+    &__item:hover > &__link {
+        color: #0071dc;
+        font-weight: 500;
+    }
+    &__link {
+        display: block;
+        padding: 7px 0;
+        font-size: 1.4rem;
+        line-height: 1.42;
+    }
+}
+
+.sub-menu {
+    position: absolute;
+    inset: 0 0 0 var(--main-col-width);
+
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    padding-left: var(--inner-padding);
+
+    overflow-y: auto;
+
+    &--no-main {
+        position: initial;
+        inset: initial;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
