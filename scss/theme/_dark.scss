@@ -2,8 +2,8 @@ html.dark {
     --body-bg-color: #292e39;
 
     --text-color: #fff;
-    --icon-filter: brightness(0) saturate(100%) invert(99%) sepia(100%)
-        saturate(0%) hue-rotate(142deg) brightness(104%) contrast(100%);
+    --icon-filter: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(104%)
+        contrast(100%);
 
     --header-bg-color: #171c28;
     --top-act-bg-color: #292e39;
@@ -12,7 +12,9 @@ html.dark {
 
     --dropdown-bg-color: #08384b;
     --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
-    --dropdown-arrow-fiter: brightness(0) saturate(100%) invert(14%) sepia(51%)
-        saturate(1228%) hue-rotate(160deg) brightness(102%) contrast(94%);
+    --dropdown-arrow-fiter: brightness(0) saturate(100%) invert(14%) sepia(51%) saturate(1228%) hue-rotate(160deg)
+        brightness(102%) contrast(94%);
     --top-menu-border: #171c28;
+
+    --navbar-bg-color-size-lg: #292e39;
 }

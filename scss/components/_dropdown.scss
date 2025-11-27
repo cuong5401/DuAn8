@@ -1,7 +1,10 @@
 @use "../abstracts";
 
-.appear-dropdown:hover .dropdown {
-    display: block;
+.appear-dropdown {
+    width: 100%;
+    &:hover .dropdown {
+        display: block;
+    }
 }
 .dropdown {
     position: absolute;

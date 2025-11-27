@@ -1,13 +1,16 @@
 <div class="container">
     <div class="top-bar">
-        <button class="top-bar__more icon">
+        <button class="top-bar__more dis-none dis-lg-block  icon js-toggle" toggle-target="#navbar">
             <img src="./assets/icon/more.svg" alt="icon more" class="top-bar__more--icon">
         </button>
         <a class="logo" href="#!">
             <img src="./assets/img/logo.svg" alt="grocerymart" class="logo__img" />
             <h1 class="logo__title">grocerymart</h1>
         </a>
-        <div class="navbar">
+        <div id="navbar" class="navbar hide">
+            <button class=" navbar__icon-close dis-none dis-lg-block icon js-toggle" toggle-target="#navbar">
+                <img src="./assets/icon/hide-navbar-icon.svg" alt="icon more" class="top-bar__more--icon">
+            </button>
             <ul class="navbar__list js-dropdown-list">
                 <li class="appear-dropdown">
                     <a href="#!" class="navbar__link">
@@ -384,94 +387,86 @@
                                     <div class="sub-menu__col">
                                         <div class="menu-col">
                                             <div class="menu-col__icon">
-                                                <img src="./assets/img/categori/cate1-2-1.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-1-1.svg" alt=""
                                                     class="menu-col__icon-1">
-                                                <img src="./assets/img/categori/cate1-2-2.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-1-2.svg" alt=""
                                                     class="menu-col__icon-2 icon">
                                             </div>
                                             <div class="menu-col__content">
                                                 <h2 class="menu-col__title">
-                                                    TV & Video
+                                                    Grocery
                                                 </h2>
                                                 <ul>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Shop all TVs
+                                                            Shop All
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            TVs by Size
+                                                            Grilling Foods
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Smart TVs
+                                                            Spring Flavors
                                                         </a>
                                                     </li>
-                                                    <li class="menu-col__item">
-                                                        <a href="#!" class="menu-col__link">
-                                                            Roku TVs
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu-col__item">
-                                                        <a href="#!" class="menu-col__link">
-                                                            Streaming
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu-col__item">
-                                                        <a href="#!" class="menu-col__link">
-                                                            TV Mounts & Accessories
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu-col__item">
-                                                        <a href="#!" class="menu-col__link">
-                                                            DVD & Blu-Ray Players
-                                                        </a>
-                                                    </li>
-
-
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="menu-col">
                                             <div class="menu-col__icon">
-                                                <img src="./assets/img/categori/cate1-3-1.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-2-1.svg" alt=""
                                                     class="menu-col__icon-1">
-                                                <img src="./assets/img/categori/cate1-3-2.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-2-2.svg" alt=""
                                                     class="menu-col__icon-2 icon">
                                             </div>
                                             <div class="menu-col__content">
                                                 <h2 class="menu-col__title">
-                                                    Wearable Technology
+                                                    Fresh Produce
                                                 </h2>
                                                 <ul>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Galaxy Watch
+                                                            Shop All
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Apple Watch
+                                                            Celebrate Salad Month
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Fitness Trackers
+                                                            Healthy Living
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Virtual Reality
+                                                            Chilled Dressing
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Headphones
+                                                            Fresh Fruit
                                                         </a>
                                                     </li>
-
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Salad Kits & Bowls
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Organic Produce
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Fresh Vegetables
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -479,94 +474,86 @@
                                     <div class="sub-menu__col">
                                         <div class="menu-col">
                                             <div class="menu-col__icon">
-                                                <img src="./assets/img/categori/cate1-2-1.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-3-1.svg" alt=""
                                                     class="menu-col__icon-1">
-                                                <img src="./assets/img/categori/cate1-2-2.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-3-2.svg" alt=""
                                                     class="menu-col__icon-2 icon">
                                             </div>
                                             <div class="menu-col__content">
                                                 <h2 class="menu-col__title">
-                                                    TV & Video
+                                                    Bakery & Bread
                                                 </h2>
                                                 <ul>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Shop all TVs
+                                                            Shop All
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            TVs by Size
+                                                            New in Bakery
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Smart TVs
+                                                            Sliced Bread
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Roku TVs
+                                                            Rolls & Buns
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Streaming
+                                                            Tortillas
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            TV Mounts & Accessories
+                                                            Breakfast Breads
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            DVD & Blu-Ray Players
+                                                            Pies
                                                         </a>
                                                     </li>
-
-
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Cookies & Brownies
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="menu-col">
                                             <div class="menu-col__icon">
-                                                <img src="./assets/img/categori/cate1-3-1.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-4-1.svg" alt=""
                                                     class="menu-col__icon-1">
-                                                <img src="./assets/img/categori/cate1-3-2.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-4-2.svg" alt=""
                                                     class="menu-col__icon-2 icon">
                                             </div>
                                             <div class="menu-col__content">
                                                 <h2 class="menu-col__title">
-                                                    Wearable Technology
+                                                    Frozen
                                                 </h2>
                                                 <ul>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Galaxy Watch
+                                                            Frozen Breakfast
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Apple Watch
+                                                            Frozen Potatoes
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Fitness Trackers
+                                                            Frozen Meals & Snacks
                                                         </a>
                                                     </li>
-                                                    <li class="menu-col__item">
-                                                        <a href="#!" class="menu-col__link">
-                                                            Virtual Reality
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu-col__item">
-                                                        <a href="#!" class="menu-col__link">
-                                                            Headphones
-                                                        </a>
-                                                    </li>
-
                                                 </ul>
                                             </div>
                                         </div>
@@ -574,77 +561,91 @@
                                     <div class="sub-menu__col">
                                         <div class="menu-col">
                                             <div class="menu-col__icon">
-                                                <img src="./assets/img/categori/cate1-4-1.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-5-1.svg" alt=""
                                                     class="menu-col__icon-1">
-                                                <img src="./assets/img/categori/cate1-4-2.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-5-2.svg" alt=""
                                                     class="menu-col__icon-2 icon">
                                             </div>
                                             <div class="menu-col__content">
                                                 <h2 class="menu-col__title">
-                                                    Computers
+                                                    Snacks
                                                 </h2>
                                                 <ul>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Shop All Computers
+                                                            Shop All
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Laptops
+                                                            Chips
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            PC Gaming
+                                                            Popcorn & Pretzels
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Monitors
+                                                            Crackers
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Chromebook
+                                                            Salsa & Dips
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="menu-col">
+                                            <div class="menu-col__icon">
+                                                <img src="./assets/img/categori/cate2-6-1.svg" alt=""
+                                                    class="menu-col__icon-1">
+                                                <img src="./assets/img/categori/cate2-6-2.svg" alt=""
+                                                    class="menu-col__icon-2 icon">
+                                            </div>
+                                            <div class="menu-col__content">
+                                                <h2 class="menu-col__title">
+                                                    Candy
+                                                </h2>
+                                                <ul>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Shop All
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Printers & Ink
+                                                            Better for You
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Shop all TVs
+                                                            Chocolate
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Computer Accessories
+                                                            Sugar Free Candy
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Desktops
+                                                            Gum
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Tax Software
+                                                            Mints
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Computer Software
+                                                            On-the-Go
                                                         </a>
                                                     </li>
-                                                    <li class="menu-col__item">
-                                                        <a href="#!" class="menu-col__link">
-                                                            PC Finder
-                                                        </a>
-                                                    </li>
-
                                                 </ul>
                                             </div>
                                         </div>
@@ -652,29 +653,29 @@
                                     <div class="sub-menu__col">
                                         <div class="menu-col">
                                             <div class="menu-col__icon">
-                                                <img src="./assets/img/categori/cate1-5-1.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-7-1.svg" alt=""
                                                     class="menu-col__icon-1">
-                                                <img src="./assets/img/categori/cate1-5-2.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-7-2.svg" alt=""
                                                     class="menu-col__icon-2 icon">
                                             </div>
                                             <div class="menu-col__content">
                                                 <h2 class="menu-col__title">
-                                                    Savings
+                                                    Cocktails & Mixes Coffee
                                                 </h2>
                                                 <ul>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Tech Savings
+                                                            Ground Coffee
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Overstock Savings
+                                                            Whole Bean Coffee
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Tech Rollbacks
+                                                            Coffee Pods
                                                         </a>
                                                     </li>
 
@@ -683,54 +684,54 @@
                                         </div>
                                         <div class="menu-col">
                                             <div class="menu-col__icon">
-                                                <img src="./assets/img/categori/cate1-6-1.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-8-1.svg" alt=""
                                                     class="menu-col__icon-1">
-                                                <img src="./assets/img/categori/cate1-6-2.svg" alt=""
+                                                <img src="./assets/img/categori/cate2-8-2.svg" alt=""
                                                     class="menu-col__icon-2 icon">
                                             </div>
                                             <div class="menu-col__content">
                                                 <h2 class="menu-col__title">
-                                                    Cell Phones
+                                                    Beverages
                                                 </h2>
                                                 <ul>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Wireless Deals
+                                                            Shop All
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            5G Phones
+                                                            Water
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Prepaid Phones & Plans
+                                                            Soft Drinks
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Refurbished Phones
+                                                            Fruit Juice
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            iPhone Accessories
+                                                            Sports Drinks
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Cases & Screen Protectors
+                                                            Energy Drinks
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Walmart Protection Plan
+                                                            Tea
                                                         </a>
                                                     </li>
                                                     <li class="menu-col__item">
                                                         <a href="#!" class="menu-col__link">
-                                                            Unlocked Phones
+                                                            Hot Chocolate & Cocoa
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -747,16 +748,323 @@
                         Beauty
                         <img src="./assets/icon/arrow-down.svg" alt="arrow-down" class="icon navbar__arrow" />
                     </a>
+                    <div class="dropdown">
+                        <div class="dropdown__inner">
+                            <div class="top-menu">
+                                <div class="sub-menu sub-menu--no-main">
+                                    <div class="sub-menu__col">
+                                        <div class="menu-col">
+                                            <div class="menu-col__icon">
+                                                <img src="./assets/img/categori/cate3-1-1.svg" alt=""
+                                                    class="menu-col__icon-1">
+                                                <img src="./assets/img/categori/cate3-1-2.svg" alt=""
+                                                    class="menu-col__icon-2 icon">
+                                            </div>
+                                            <div class="menu-col__content">
+                                                <h2 class="menu-col__title">
+                                                    Featured Shops
+                                                </h2>
+                                                <ul>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Pickup Today in Beauty
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            BeautySpaceNK
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Equate Beauty
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Beauty Deals
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Walmart Exclusives
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Luxury Beauty Deals
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            New Arrivals
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="menu-col">
+                                            <div class="menu-col__icon">
+                                                <img src="./assets/img/categori/cate3-2-1.svg" alt=""
+                                                    class="menu-col__icon-1">
+                                                <img src="./assets/img/categori/cate3-2-2.svg" alt=""
+                                                    class="menu-col__icon-2 icon">
+                                            </div>
+                                            <div class="menu-col__content">
+                                                <h2 class="menu-col__title">
+                                                    Trending in Beauty
+                                                </h2>
+                                                <ul>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Trending Beauty Products
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Celebrate Earth Day
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Prom-ready Beauty
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Summer Beauty
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Travel Size & Minis
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu__col">
+                                        <div class="menu-col">
+                                            <div class="menu-col__icon">
+                                                <img src="./assets/img/categori/cate3-3-1.svg" alt=""
+                                                    class="menu-col__icon-1">
+                                                <img src="./assets/img/categori/cate3-3-2.svg" alt=""
+                                                    class="menu-col__icon-2 icon">
+                                            </div>
+                                            <div class="menu-col__content">
+                                                <h2 class="menu-col__title">
+                                                    Featured Brands
+                                                </h2>
+                                                <ul>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Shop All
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            New in Bakery
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Sliced Bread
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Rolls & Buns
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Tortillas
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Breakfast Breads
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Pies
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Cookies & Brownies
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="menu-col">
+                                            <div class="menu-col__icon">
+                                                <img src="./assets/img/categori/cate3-4-1.svg" alt=""
+                                                    class="menu-col__icon-1">
+                                                <img src="./assets/img/categori/cate3-4-2.svg" alt=""
+                                                    class="menu-col__icon-2 icon">
+                                            </div>
+                                            <div class="menu-col__content">
+                                                <h2 class="menu-col__title">
+                                                    Communities to Support
+                                                </h2>
+                                                <ul>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Black Owned Beauty
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            LatinX Owned Beauty
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            AAPI Owned Beauty
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu__col">
+                                        <div class="menu-col">
+                                            <div class="menu-col__icon">
+                                                <img src="./assets/img/categori/cate3-5-1.svg" alt=""
+                                                    class="menu-col__icon-1">
+                                                <img src="./assets/img/categori/cate3-5-2.svg" alt=""
+                                                    class="menu-col__icon-2 icon">
+                                            </div>
+                                            <div class="menu-col__content">
+                                                <h2 class="menu-col__title">
+                                                    Premium Beauty
+                                                </h2>
+                                                <ul>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Shop All
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Hair Color
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Hair Care
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Skincare
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Fragrance
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Makeup
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Beauty Tech & Tools
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu__col">
+                                        <div class="menu-col">
+                                            <div class="menu-col__icon">
+                                                <img src="./assets/img/categori/cate3-6-1.svg" alt=""
+                                                    class="menu-col__icon-1">
+                                                <img src="./assets/img/categori/cate3-6-2.svg" alt=""
+                                                    class="menu-col__icon-2 icon">
+                                            </div>
+                                            <div class="menu-col__content">
+                                                <h2 class="menu-col__title">
+                                                    Beauty
+                                                </h2>
+                                                <ul>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Shop All
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Men's Grooming
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Bath & Body
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Beauty Tech & Tools
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Makeup
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Fragrance
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Nail Care
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Hair Care
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Hair Color
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-col__item">
+                                                        <a href="#!" class="menu-col__link">
+                                                            Skincare
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
         <div class="top-act">
-            <div class="top-act__group">
+            <div class="top-act__group dis-lg-none">
                 <button class="top-act__btn top-act__btn--single">
                     <img src="./assets/icon/find.svg" alt="find" class="icon top-act__icon" />
                 </button>
             </div>
-            <div class="top-act__group">
+            <div class="top-act__group dis-md-none">
                 <button class="top-act__btn">
                     <img src="./assets/icon/love.svg" alt="love" class="icon top-act__icon" />
                     <span class="top-act__title">03</span>

@@ -1,0 +1,28 @@
+$u-breakpoints: (
+    xxl: 1400px,
+    xl: 1200px,
+    lg: 992px,
+    md: 768px,
+    sm: 576px,
+);
+
+$display-list: none, block, flex, grid;
+
+/* xử lí các chiều ngang về màn hình */
+
+@mixin get-util-breakpoint($breakpoint: null) {
+    $infix: if($breakpoint, "-#{$breakpoint}", "");
+    @each $display in $display-list {
+        .dis#{$infix}-#{$display} {
+            display: $display !important;
+        }
+    }
+}
+
+@include get-util-breakpoint();
+
+@each $breakpoint, $dimension in $u-breakpoints {
+    @media (max-width: $dimension - 0.02px) {
+        @include get-util-breakpoint($breakpoint);
+    }
+}

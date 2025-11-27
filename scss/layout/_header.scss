@@ -22,14 +22,6 @@
     @include abstracts.breakpoint(sm) {
         padding: 16px 0;
     }
-
-    &__more {
-        display: none;
-        background-color: transparent;
-        @include abstracts.breakpoint(lg) {
-            display: block;
-        }
-    }
 }
 
 .navbar {
@@ -39,12 +31,29 @@
         margin-left: auto;
         margin-right: auto;
     }
+
     @include abstracts.breakpoint(lg) {
-        display: none;
+        position: fixed;
+        z-index: 10;
+        inset: 0 50% 0 0;
+        padding: 30px;
+        background-color: var(--navbar-bg-color-size-lg);
+        transition: transform ease 0.3s, opacity ease 0.3s;
+    }
+
+    &__icon-close {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        padding-left: 15px;
     }
 
     &__list {
         @extend %flex-col-center;
+        @include abstracts.breakpoint(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__link {
@@ -55,10 +64,52 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.46;
+        @include abstracts.breakpoint(lg) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     &__link:hover {
         color: #ac5ba8;
+    }
+
+    &.hide {
+        @include abstracts.breakpoint(lg) {
+            transform: translateX(-110%);
+            opacity: 0.5;
+        }
+    }
+
+    &.show {
+        @include abstracts.breakpoint(lg) {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+
+    &.show ~ &__overlay {
+        @include abstracts.breakpoint(lg) {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+
+    &__overlay {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        position: fixed;
+        z-index: 9;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        transition-property: opacity, visibility;
+        transition-duration: 0.5s;
     }
 }
 
@@ -68,10 +119,6 @@
     margin-left: auto;
 
     &__group {
-        @include abstracts.breakpoint(md) {
-            display: none;
-        }
-
         @extend %flex-col-center;
         border-radius: 8px;
         background: var(--top-act-bg-color);
@@ -86,11 +133,6 @@
         cursor: pointer;
     }
 
-    &__btn--single {
-        @include abstracts.breakpoint(lg) {
-            display: none;
-        }
-    }
     &__btn--single {
         padding: 13px;
     }
