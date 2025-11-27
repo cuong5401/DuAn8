@@ -13,6 +13,12 @@
     width: min(1240px, 100%);
     display: none;
 
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        padding-top: 0;
+        width: 100%;
+    }
+
     &__inner {
         --inner-height: min(600px, 100vh - 160px);
         --inner-padding: 30px;
@@ -24,6 +30,14 @@
         background: var(--dropdown-bg-color);
         box-shadow: 0 40px 90px 20px var(--dropdown-shadow-color);
 
+        @include abstracts.breakpoint(lg) {
+            max-height: 100%;
+            padding: 0;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+        }
+
         &::before {
             content: url("../icon/dropdown-arrow.svg");
             position: absolute;
@@ -31,6 +45,9 @@
             left: var(--arrow-left-pos);
             translate: -75%;
             filter: var(--dropdown-arrow-fiter, none);
+            @include abstracts.breakpoint(lg) {
+                display: none;
+            }
         }
     }
 }
@@ -40,15 +57,27 @@
     height: calc(var(--inner-height) - var(--inner-padding) * 2);
     overflow-y: auto;
 
+    @include abstracts.breakpoint(lg) {
+        height: auto;
+        overflow-y: initial;
+    }
+
     &__main {
         --main-col-width: 292px;
-        @include abstracts.breakpoint(xl) {
-            --main-col-width: 220px;
-        }
         max-width: var(--main-col-width);
         height: inherit;
         overflow-y: auto;
         border-right: 1px solid var(--top-menu-border);
+
+        @include abstracts.breakpoint(xl) {
+            --main-col-width: 220px;
+        }
+
+        @include abstracts.breakpoint(lg) {
+            --main-col-width: 100%;
+            overflow-y: initial;
+            border-right: none;
+        }
     }
 }
 
@@ -62,6 +91,9 @@
 
     &__item--active .sub-menu {
         display: grid;
+        @include abstracts.breakpoint(lg) {
+            display: block;
+        }
     }
 
     &__icon {
@@ -72,6 +104,10 @@
 
         @include abstracts.breakpoint(xl) {
             display: none;
+        }
+
+        @include abstracts.breakpoint(lg) {
+            display: block;
         }
     }
     &__icon-1 {
@@ -125,11 +161,20 @@
 
     overflow-y: auto;
 
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        padding-left: 0;
+        overflow-y: initial;
+    }
+
     &--no-main {
         position: initial;
         inset: initial;
-
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+
+        @include abstracts.breakpoint(lg) {
+            grid-template-columns: 1fr;
+        }
     }
 }

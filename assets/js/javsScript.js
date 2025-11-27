@@ -100,6 +100,7 @@ window.addEventListener("template-loaded", calArrowPos);
  */
 window.addEventListener("template-loaded", handleActiveMenu);
 
+
 function handleActiveMenu() {
     const dropdowns = $$(".js-dropdown");
     const menus = $$(".js-menu-list");
@@ -120,6 +121,11 @@ function handleActiveMenu() {
             Array.from(items).forEach((item) => {
                 item.onmouseenter = () => {
                     if (window.innerWidth <= 991) return;
+                    removeActive(menu);
+                    item.classList.add(activeClass);
+                };
+                item.onclick = () => {
+                    if (window.innerWidth >= 991) return;
                     removeActive(menu);
                     item.classList.add(activeClass);
                 };
@@ -173,5 +179,10 @@ window.addEventListener("resize", () => {
             el.classList.remove("show");
             el.classList.add("hide");
         }
+        const menus = $$(".js-menu-list");
+        const activeClass = "menu-col__item--active";
+        menus.forEach((menu) => {
+            menu.querySelector(`.${activeClass}`)?.classList.remove(activeClass);
+        });
     }
 });
