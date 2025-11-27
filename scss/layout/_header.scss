@@ -40,7 +40,7 @@
         background-color: var(--navbar-bg-color-size-lg);
         transition: transform ease 0.3s, opacity ease 0.3s;
     }
-    @include abstracts.breakpoint(sm) {
+    @include abstracts.breakpoint(md) {
         inset: 0 20% 0 0;
     }
 

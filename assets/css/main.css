@@ -1277,7 +1277,7 @@ html.dark {
     transition: transform ease 0.3s, opacity ease 0.3s;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .navbar {
     inset: 0 20% 0 0;
   }
