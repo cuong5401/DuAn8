@@ -1292,9 +1292,8 @@ html.dark {
   .navbar__list {
     flex-direction: column;
     align-items: flex-start;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 120px);
     overflow-y: auto;
-    scroll-behavior: contain;
   }
 }
 .navbar__link {
@@ -1345,7 +1344,6 @@ html.dark {
   background-color: rgba(0, 0, 0, 0.4);
   transition-property: opacity, visibility;
   transition-duration: 0.5s;
-  scroll-behavior: contain;
 }
 
 .top-act {
