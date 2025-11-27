@@ -40,6 +40,9 @@
         background-color: var(--navbar-bg-color-size-lg);
         transition: transform ease 0.3s, opacity ease 0.3s;
     }
+    @include abstracts.breakpoint(sm) {
+        inset: 0 20% 0 0;
+    }
 
     &__icon-close {
         width: 24px;
@@ -55,6 +58,7 @@
             align-items: flex-start;
             height: calc(100vh - 80px);
             overflow-y: auto;
+            scroll-behavior: contain;
         }
     }
 
@@ -113,6 +117,7 @@
 
         transition-property: opacity, visibility;
         transition-duration: 0.5s;
+        scroll-behavior: contain;
     }
 }
 
